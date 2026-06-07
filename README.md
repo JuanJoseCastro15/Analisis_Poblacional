@@ -2,7 +2,7 @@
 
 ## 🏫 Expo Proyectos de Ingeniería 2025-2 | CETYS Universidad
 * **Asignatura:** Álgebra Lineal  
-* **Autor:** Juan José Castro  
+* **Coautores:** Juan José Castro, Fatima Vazquez, Mia De La Cruz
 
 ---
 

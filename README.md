@@ -28,4 +28,4 @@ El proyecto se presentó ante jueces por medio de un póster. Se puso a prueba y
 ---
 
 ### Conclusiones
-Después de presentar el proyecto, llegamos al consenso general de que emplear una matriz de Leslie no era la mejor opción, ya que esta no toma en cuenta valores externos como la migración. Esto nos dejó como lección investigar a profundidad las herramientas y modelos que usaremos antes de emplearlos.
+Tras la retroalimentación de los jueces, determinamos que la Matriz de Leslie es ideal para poblaciones cerradas, pero limitada para México (población abierta). Al no contemplar variables dinámicas como la migración, el modelo pierde precisión a largo plazo.

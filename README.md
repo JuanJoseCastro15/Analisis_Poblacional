@@ -1,35 +1,31 @@
-# 📊 Análisis Poblacional: Proyección Demográfica de México (Matriz de Leslie)
+# Análisis Poblacional: Proyección Demográfica de México (Matriz de Leslie)
 
-## 🏫 Expo Proyectos de Ingeniería 2025-2 | CETYS Universidad
-* **Asignatura:** Álgebra Lineal  
+## Expo Proyectos de Ingeniería 2025-2 | CETYS Universidad
+* **Asignatura:** Álgebra Lineal
+* **Categoría:** Póster 
 * **Coautores:** Juan José Castro, Fatima Vazquez, Mia De La Cruz
 
 ---
 
-### 📝 Descripción del Proyecto
-Este proyecto implementa un modelo de simulación demográfica en **Python** para proyectar la población de México a lo largo de **100 años** en intervalos de **20 años**, utilizando una **Matriz de Leslie**.
+### Descripción del Proyecto
+El proyecto consistió en la proyección de la población de México con intervalos de 20 años empleando una matriz de Leslie para un periodo total de 100 años. Para el modelo, la población se desglosó en 5 grupos de edad (0-19, 20-39, 40-59, 60-79 y 80-99 años), generando una gráfica por cada grupo con 6 puntos en el tiempo (Año 0, 20, 40, 60, 80 y 100).
 
-* **Grupos de edad (5):** 0-19, 20-39, 40-59, 60-79 y 80-99 años.
-* **Puntos de control (6):** Genera una gráfica por grupo con 6 puntos en el tiempo: Año 0 (base real INEGI 2020), Año 20, 40, 60, 80 y 100.
-* **Ajuste por COVID-19:** Se promediaron los datos de mortalidad del INEGI de los años 2017 a 2019 para evitar que la anomalía atípica del 2020 distorsionara la proyección a largo plazo.
+Se usó la información de los censos del 2020 del INEGI, recabando las defunciones y los nacimientos. Se tuvieron que promediar los años del 2017 al 2019 ya que el último año (2020) tenía datos que estaban alterados por el COVID-19. La matriz fue creada en Jupyter Notebook enlazándolo con un entorno de Anaconda. El código completo fue escrito en Python dependiendo de archivos .csv extraídos de las bases de datos del INEGI.
 
 ---
 
-### 🛠️ Tecnologías Empleadas
-* **Python:** Lógica principal del modelo iterativo.
-* **Pandas:** Limpieza y procesamiento de las bases de datos del INEGI (`.csv` y `.xls`).
-* **NumPy:** Operaciones de álgebra lineal, manejo de vectores de estado y multiplicaciones matriciales.
-* **Jupyter Notebook y Anaconda:** Entorno de desarrollo interactivo por celdas y gestión de entornos virtuales.
+### Presentación
+El proyecto se presentó ante jueces por medio de un póster. Se puso a prueba y el proyecto se pudo defender correctamente. Aunque no ganamos el primer lugar, fue una experiencia enriquecedora, pues recibimos feedback por parte de los jueces y nos formó para poder exponer en público temas complejos de ingeniería.
 
 ---
 
-### 📁 Estructura del Repositorio
-* **Archivos de datos:** Documentos `.xls` y `.csv` con los registros de natalidad, defunciones y población del INEGI.
-* **Matriz Leslie.ipynb:** Jupyter Notebook con el código fuente y las 5 gráficas generadas.
-* **PROYECTO ALGEBRA.pdf:** Reporte con el soporte teórico y matemático del modelo.
-* **.gitignore y README.md:** Archivos de configuración y documentación del repositorio.
+### Tecnologías y Herramientas Empleadas
+* **Python** (Código y lógica matemática)
+* **Jupyter Notebook** (Entorno de desarrollo por celdas)
+* **Anaconda** (Gestión de entorno virtual)
+* **Procesamiento de datos** (Uso de archivos .csv y .xls del INEGI)
 
 ---
 
-### 📈 Conclusiones y Limitaciones del Modelo
-La Matriz de Leslie es una herramienta matemáticamente elegante para proyecciones a corto plazo bajo condiciones estables. Sin embargo, al asumir un sistema demográfico cerrado, revela limitaciones críticas para un horizonte de 100 años, ya que ignora variables del mundo real como los flujos migratorios y los cambios socioeconómicos. La principal lección de ingeniería fue entender que la validez de cualquier software o código está estrictamente delimitada por las fronteras teóricas de su modelo matemático.
+### Conclusiones
+Después de presentar el proyecto, llegamos al consenso general de que emplear una matriz de Leslie no era la mejor opción, ya que esta no toma en cuenta valores externos como la migración. Esto nos dejó como lección investigar a profundidad las herramientas y modelos que usaremos antes de emplearlos.
